@@ -6,6 +6,28 @@
     <meta name="robots" content="noindex">
     <title>Proyectos - Gonzalo</title>
     <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Estilos añadidos para la disposición y el tono oscuro del botón -->
+    <style>
+        .botones-contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo para dar el tono oscuro al botón de Mathlab */
+        .btn-oscuro {
+            background-color: #2c3e50; /* Color azul/gris oscuro */
+            color: #ffffff;            /* Texto en blanco para buen contraste */
+            border: 1px solid #2c3e50;
+        }
+
+        .btn-oscuro:hover {
+            background-color: #1a252f; /* Tono aún más oscuro al pasar el cursor */
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,7 +41,13 @@
            Uno de los proyectos más interesantes que he realizado durante mi formación en la Universidad, ha sido el de crear una centralita telefónica. Esta centralita la hemos desarrollado en un entorno virtual, Ubuntu, haciendo uso de Asterisk, uniéndolo a una base de datos con Mariadb, y utilizando Zoiper para realizar las llamadas y registros. 
         </p>
 
-        <a href="perfil-inicio.html" class="btn-volver">← Volver al perfil</a>
+        <!-- Contenedor para organizar los dos botones -->
+        <div class="botones-contenedor">
+            <a href="perfil-inicio.html" class="btn-volver">← Volver al perfil</a>
+            
+            <!-- Botón del certificado en tono oscuro y sin flecha -->
+            <a href="Mathlab.pdf" class="btn-volver btn-oscuro" target="_blank">Certificados Mathlab</a>
+        </div>
     </div>
 
 </body>
